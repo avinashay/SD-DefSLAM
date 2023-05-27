@@ -28,7 +28,7 @@ endif()
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
-set(CMAKE_PREFIX_PATH "/home/jose/pytorch/torch/share/cmake")
+set(CMAKE_PREFIX_PATH "/home/avinash/Desktop/code/Deform/libtorch/share/cmake/")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
 add_compile_definitions(DEFAULTCALIBRATION="${PROJECT_SOURCE_DIR}/calibration_files/default.yaml")
 
@@ -125,3 +125,7 @@ set_property(TARGET DefSLAMHamylnINV PROPERTY CXX_STANDARD 14)
 add_executable(DefSLAM_Endoscope Apps/simple_endoscope.cc)
 target_link_libraries(DefSLAM_Endoscope ${PROJECT_NAME} Dataloader ${TORCH_LIBRARIES})
 set_property(TARGET DefSLAMHamylnINV PROPERTY CXX_STANDARD 14)
+
+add_executable(TEST Apps/test.cc)
+target_link_libraries(TEST ${PROJECT_NAME} ${TORCH_LIBRARIES})
+set_property(TARGET TEST PROPERTY CXX_STANDARD 14)

@@ -35,3 +35,16 @@ lib/libDeformableSLAM.so
 lib/libORBSLAM.so
 lib/libToolsPCL.so
 Thirdparty/g2o/lib/libg2o.so
+lib/libBBS.so
+lib/libDBoW2.so
+lib/libDeformableSLAM.so
+lib/libORBSLAM.so
+lib/libToolsPCL.so
+Thirdparty/g2o/lib/libg2o.so
+Apps/TEST
+Apps/DefSLAMHamylnINV
+Apps/DefSLAMHamyln
+Apps/DefSLAMGTCT
+Apps/DefSLAMGT
+Apps/DefSLAM_Endoscope
+Apps/DefSLAM
